@@ -13,9 +13,9 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text glass-card animate-fade-in">
-            <h3>I'm Aryan Karmur, a Passionate React Developer</h3>
+            <h3>I'm Aryan Karmur, a Passionate Frontend Developer</h3>
             <p>
-              I am a fresher React developer with a strong foundation in modern web technologies. 
+              I am a Frontend Developer with a strong foundation in modern web technologies. 
               I specialize in building responsive, interactive, and visually stunning web applications. 
               My journey in web development started with HTML, CSS, and JavaScript, and I quickly 
               gravitated towards React for its component-based architecture and powerful ecosystem.

@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="hero-title">
             Aryan <span className="highlight">Karmur</span>
           </h1>
-          <h2 className="hero-subtitle">Fresher React Developer</h2>
+          <h2 className="hero-subtitle">Frontend Developer</h2>
           <p className="hero-description">
             I build modern, attractive, and eye-catching web applications. Passionate about creating seamless user experiences using the latest web technologies.
           </p>
