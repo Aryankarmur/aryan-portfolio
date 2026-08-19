@@ -1,35 +1,35 @@
 import React from 'react';
-import { ExternalLink, ShoppingCart, CloudSun, CheckSquare } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+import { ExternalLink, ShoppingCart, CloudSun } from 'lucide-react';
+import { FaGithub, FaYoutube } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-commerce Platform',
+      title: 'Mini-Mart (E-Commerce Platform)',
       description: 'A full-featured e-commerce platform built with React. Includes product browsing, shopping cart functionality, and simulated checkout process.',
       imageIcon: <ShoppingCart size={48} className="text-indigo-400" />,
-      tags: ['React', 'CSS', 'Context API'],
+      tags: ['React.js', 'CSS3', 'Context API'],
       githubLink: 'https://github.com/Aryankarmur/mini_mart',
       liveLink: 'https://mini-mart-bajar.netlify.app',
       color: 'indigo'
     },
     {
-      title: 'Weather App',
+      title: 'MeghDarshan (Dynamic Weather Application)',
       description: 'A dynamic weather application that provides real-time weather forecasts based on user location or city search using external APIs.',
       imageIcon: <CloudSun size={48} className="text-cyan-400" />,
-      tags: ['React', 'API Integration', 'Tailwind'],
+      tags: ['React.js', 'REST APIs', 'CSS3'],
       githubLink: 'https://github.com/Aryankarmur/meghadarshan',
       liveLink: 'https://meghadarshan.netlify.app',
       color: 'cyan'
     },
     {
-      title: 'Todo Task Manager',
-      description: 'A clean and intuitive task management app to organize daily activities. Features include adding, editing, deleting, and filtering tasks.',
-      imageIcon: <CheckSquare size={48} className="text-emerald-400" />,
-      tags: ['React', 'LocalStorage', 'Bootstrap'],
-      githubLink: 'https://github.com/Aryankarmur/todo_app',
-      liveLink: 'https://todoapp-by-aryan.netlify.app',
+      title: 'YWatch (Video Streaming Platform)',
+      description: 'A clone of the YouTube website built with React. Features include video browsing, search functionality, and video playback.',
+      imageIcon: <FaYoutube size={48} className="text-emerald-400" />,
+      tags: ['React.js', 'REST APIs', 'CSS3', 'React Router'],
+      githubLink: 'https://github.com/Aryankarmur/YouTube-clone',
+      liveLink: 'https://ywatch-aryan.netlify.app',
       color: 'emerald'
     }
   ];
