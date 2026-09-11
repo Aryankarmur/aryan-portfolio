@@ -1,11 +1,11 @@
 .contact-section {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
 }
 
 .contact-container {
   display: flex;
   justify-content: center;
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
@@ -14,36 +14,31 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.contact-info h3 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+  gap: 2rem;
 }
 
 .contact-desc {
   color: var(--text-secondary);
-  margin-bottom: 2.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
 }
 
 .info-items {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: auto;
+  gap: 1.5rem;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .info-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
   background: var(--bg-tertiary);
   display: flex;
   align-items: center;
@@ -51,24 +46,30 @@
   color: var(--accent-primary);
   flex-shrink: 0;
   transition: var(--transition);
+  border: 1px solid var(--glass-border);
 }
 
 .info-item:hover .info-icon {
   background: var(--accent-primary);
   color: white;
-  transform: translateY(-3px);
+  border-color: transparent;
+  transform: translateY(-2px);
 }
 
-.info-item h4 {
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-  color: var(--text-primary);
+.info-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
 }
 
-.info-item a, 
+.info-item a,
 .info-item p {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
+  transition: var(--transition);
 }
 
 .info-item a:hover {
@@ -77,6 +78,6 @@
 
 @media (max-width: 576px) {
   .contact-info {
-    padding: 1.5rem;
+    padding: 1.75rem;
   }
 }
