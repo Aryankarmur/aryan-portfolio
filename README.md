@@ -43,7 +43,7 @@ The portfolio highlights four primary personal projects:
 ### 2. DevBlog — Full-Stack Blog Application
 - **Description:** A blogging platform featuring user authentication with JWT, protected routing, and CRUD operations for blog posts.
 - **Tech Highlights:** React.js, Express.js, MongoDB, JWT
-- **Links:** [GitHub Repository](https://github.com/Aryankarmur/devblog)
+- **Links:** [Live Demo](https://devblo.netlify.app/) | [GitHub Repository](https://github.com/Aryankarmur/devblog)
 
 ### 3. Mini Mart — React E-Commerce Application
 - **Description:** An e-commerce web application with product listing, dynamic detail views, shopping cart management, and state persistence.
