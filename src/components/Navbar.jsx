@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2, Sun, Moon } from 'lucide-react';
-import resumePDF from '../assets/Resume/Aryan_Resume.pdf';
+import resumePDF from '../assets/Resume/Aryan_Karmur_Resume.pdf';
 import './Navbar.css';
 
 const navLinks = [
