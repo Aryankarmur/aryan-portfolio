@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2, Sun, Moon } from 'lucide-react';
 import resumePDF from '../assets/Resume/Aryan_Resume.pdf';
 import './Navbar.css';
@@ -83,6 +83,17 @@ const Navbar = ({ theme, toggleTheme }) => {
             ))}
           </ul>
 
+          {/* Resume Link */}
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-resume-btn"
+            aria-label="View resume (opens in new tab)"
+          >
+            Resume
+          </a>
+
           {/* Theme Toggle */}
           <button
             className="theme-toggle-btn"
@@ -123,6 +134,18 @@ const Navbar = ({ theme, toggleTheme }) => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={resumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mobile-nav-link"
+                onClick={handleMobileLinkClick}
+                aria-label="View resume (opens in new tab)"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       </div>

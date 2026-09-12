@@ -5,10 +5,23 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'DevBlog',
+    subtitle: 'Full-Stack Blog Application',
+    description:
+      'A blogging platform where users can sign up, write posts, and leave comments. I built the backend from scratch with Express.js and MongoDB, added JWT-based authentication with protected routes, and connected it to a React frontend with full CRUD operations.',
+    icon: <BookText size={44} />,
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    githubLink: 'https://github.com/Aryankarmur/devblog',
+    liveLink: 'https://github.com/Aryankarmur/devblog',
+    liveIsGitHub: true,
+    colorKey: 'violet',
+    featured: true,
+  },
+  {
     title: 'YWatch',
     subtitle: 'YouTube-Inspired Video Platform',
     description:
-      'YouTube-inspired React application with video browsing, search, API integration, routing, responsive layouts, and video playback.',
+      'A video browsing app that pulls data from the YouTube Data API. Users can search for videos, browse by category, and watch videos with a custom player layout. Built with React Router for multi-page navigation.',
     icon: <FaYoutube size={44} />,
     tags: ['React.js', 'REST APIs', 'React Router', 'CSS3'],
     githubLink: 'https://github.com/Aryankarmur/YouTube-clone',
@@ -16,22 +29,10 @@ const projects = [
     colorKey: 'emerald',
   },
   {
-    title: 'DevBlog',
-    subtitle: 'Full-Stack Blog Application',
-    description:
-      'Full-stack blogging application with React, Express.js, MongoDB, JWT authentication, protected routes, and CRUD operations.',
-    icon: <BookText size={44} />,
-    tags: ['React.js', 'Express.js', 'MongoDB', 'JWT'],
-    githubLink: 'https://github.com/Aryankarmur/devblog',
-    liveLink: 'https://github.com/Aryankarmur/devblog',
-    liveIsGitHub: true,
-    colorKey: 'violet',
-  },
-  {
     title: 'Mini Mart',
     subtitle: 'React E-Commerce Application',
     description:
-      'React e-commerce application with product browsing, dynamic product details, cart management, and persistent cart state.',
+      'An e-commerce store with product listing, individual product pages, and a shopping cart that persists across sessions. Uses React Context API for global state management.',
     icon: <ShoppingCart size={44} />,
     tags: ['React.js', 'Context API', 'CSS3'],
     githubLink: 'https://github.com/Aryankarmur/mini_mart',
@@ -42,7 +43,7 @@ const projects = [
     title: 'MeghDarshan',
     subtitle: 'Weather Forecast Application',
     description:
-      'React weather application using a weather API for location-based weather data, forecasts, and dynamic weather conditions.',
+      'A weather app that fetches real-time weather data based on city search. Displays current conditions, temperature, humidity, and wind speed with a clean UI that adapts to weather conditions.',
     icon: <CloudSun size={44} />,
     tags: ['React.js', 'REST APIs', 'CSS3'],
     githubLink: 'https://github.com/Aryankarmur/meghadarshan',
@@ -63,10 +64,13 @@ const Projects = () => {
           {projects.map((project, index) => (
             <article
               key={project.title}
-              className={`project-card glass-card project-card--${project.colorKey}`}
+              className={`project-card glass-card project-card--${project.colorKey} ${project.featured ? 'project-card--featured' : ''}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`project-image project-image--${project.colorKey}`} aria-hidden="true">
+                {project.featured && (
+                  <span className="featured-badge">Featured Project</span>
+                )}
                 {project.icon}
               </div>
 

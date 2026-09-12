@@ -46,6 +46,32 @@
   opacity: 0.9;
 }
 
+/* Featured card emphasis */
+.project-card--featured {
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Featured badge */
+.featured-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: #a78bfa;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.project-image {
+  position: relative;
+}
+
 /* Content */
 .project-content {
   padding: 1.75rem;

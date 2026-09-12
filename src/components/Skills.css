@@ -19,7 +19,7 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
 }
 
@@ -27,7 +27,7 @@
   padding: 1.125rem 1.25rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -56,6 +56,13 @@
   height: 22px;
 }
 
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
 .skill-card h4 {
   font-size: 0.9375rem;
   font-weight: 500;
@@ -63,23 +70,24 @@
   line-height: 1.2;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.skill-note {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  font-weight: 400;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 0.875rem;
   }
 }
 
 @media (max-width: 480px) {
   .skills-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
@@ -95,5 +103,9 @@
 
   .skill-card h4 {
     font-size: 0.875rem;
+  }
+
+  .skill-note {
+    font-size: 0.75rem;
   }
 }

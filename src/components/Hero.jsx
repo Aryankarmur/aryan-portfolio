@@ -1,7 +1,6 @@
 import React from 'react';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import resumePDF from '../assets/Resume/Aryan_Resume.pdf';
 import './Hero.css';
 
 const Hero = () => {
@@ -19,21 +18,17 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description">
-            I build responsive and interactive web applications using React.js,
-            JavaScript, REST APIs, and modern frontend technologies.
+            I build responsive web applications with React.js and JavaScript.
+            I also have hands-on experience building REST APIs with Node.js,
+            Express, and MongoDB through full-stack projects.
           </p>
 
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">
               View Projects <ArrowRight size={18} aria-hidden="true" />
             </a>
-            <a
-              href={resumePDF}
-              download="Aryan_Karmur_Resume.pdf"
-              className="btn btn-outline"
-              aria-label="Download Aryan Karmur's resume as PDF"
-            >
-              <Download size={18} aria-hidden="true" /> Download Resume
+            <a href="#contact" className="btn btn-outline">
+              Contact <Mail size={18} aria-hidden="true" />
             </a>
           </div>
 

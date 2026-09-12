@@ -2,36 +2,45 @@ import React from 'react';
 import {
   Layout, Palette, FileJson, Blocks,
   Wind, GitBranch, Server, Smartphone,
-  Route, Database, Layers
+  Database, Shield, Zap, Terminal,
+  Layers, Package
 } from 'lucide-react';
 import './Skills.css';
 
 const skillGroups = [
   {
-    label: 'Core Frontend',
+    label: 'Frontend',
     skills: [
-      { name: 'HTML5', icon: <Layout className="skill-icon" />, color: '#e34c26' },
-      { name: 'CSS3', icon: <Palette className="skill-icon" />, color: '#264de4' },
-      { name: 'JavaScript', icon: <FileJson className="skill-icon" />, color: '#f0db4f' },
-      { name: 'React.js', icon: <Blocks className="skill-icon" />, color: '#61dbfb' },
+      { name: 'HTML5', note: 'Semantic markup across all projects', icon: <Layout className="skill-icon" />, color: '#e34c26' },
+      { name: 'CSS3', note: 'Custom layouts, responsive design, animations', icon: <Palette className="skill-icon" />, color: '#264de4' },
+      { name: 'JavaScript', note: 'Core language for all project logic', icon: <FileJson className="skill-icon" />, color: '#f0db4f' },
+      { name: 'React.js', note: 'Used across all projects with hooks and routing', icon: <Blocks className="skill-icon" />, color: '#61dbfb' },
+      { name: 'Redux Toolkit', note: 'State management in Mini Mart', icon: <Layers className="skill-icon" />, color: '#764abc' },
+      { name: 'Tailwind CSS', note: 'Utility-first styling in select projects', icon: <Wind className="skill-icon" />, color: '#06b6d4' },
     ],
   },
   {
-    label: 'Libraries & Tools',
+    label: 'Backend',
     skills: [
-      { name: 'React Router', icon: <Route className="skill-icon" />, color: '#ca4245' },
-      { name: 'Redux Toolkit', icon: <Database className="skill-icon" />, color: '#764abc' },
-      { name: 'Axios', icon: <Server className="skill-icon" />, color: '#5a29e4' },
-      { name: 'Tailwind CSS', icon: <Wind className="skill-icon" />, color: '#06b6d4' },
-      { name: 'Bootstrap', icon: <Layers className="skill-icon" />, color: '#7952b3' },
+      { name: 'Node.js', note: 'Runtime for DevBlog backend server', icon: <Server className="skill-icon" />, color: '#68a063' },
+      { name: 'Express.js', note: 'REST API routes and middleware in DevBlog', icon: <Zap className="skill-icon" />, color: '#4caf50' },
+      { name: 'REST APIs', note: 'Built and consumed across multiple projects', icon: <Smartphone className="skill-icon" />, color: '#ff7043' },
+      { name: 'JWT Authentication', note: 'User auth and protected routes in DevBlog', icon: <Shield className="skill-icon" />, color: '#fbc02d' },
     ],
   },
   {
-    label: 'Development',
+    label: 'Database',
     skills: [
-      { name: 'REST APIs', icon: <Server className="skill-icon" />, color: '#4caf50' },
-      { name: 'Git & GitHub', icon: <GitBranch className="skill-icon" />, color: '#f1502f' },
-      { name: 'Responsive Design', icon: <Smartphone className="skill-icon" />, color: '#e91e63' },
+      { name: 'MongoDB', note: 'Users, posts, and comments storage in DevBlog', icon: <Database className="skill-icon" />, color: '#4db33d' },
+    ],
+  },
+  {
+    label: 'Tools & Workflow',
+    skills: [
+      { name: 'Git & GitHub', note: 'Version control for all projects', icon: <GitBranch className="skill-icon" />, color: '#f1502f' },
+      { name: 'Axios', note: 'HTTP client for API calls in YWatch, MeghDarshan', icon: <Package className="skill-icon" />, color: '#5a29e4' },
+      { name: 'Thunder Client', note: 'API testing during DevBlog development', icon: <Terminal className="skill-icon" />, color: '#e91e63' },
+      { name: 'Vite', note: 'Build tool and dev server for all React projects', icon: <Zap className="skill-icon" />, color: '#646cff' },
     ],
   },
 ];
@@ -65,7 +74,12 @@ const Skills = () => {
                     >
                       {skill.icon}
                     </div>
-                    <h4>{skill.name}</h4>
+                    <div className="skill-info">
+                      <h4>{skill.name}</h4>
+                      {skill.note && (
+                        <p className="skill-note">{skill.note}</p>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>

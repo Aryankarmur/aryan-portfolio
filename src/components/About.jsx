@@ -1,6 +1,5 @@
 import React from 'react';
 import { Code2, MapPin, BookOpen, Layers } from 'lucide-react';
-import resumePDF from '../assets/Resume/Aryan_Resume.pdf';
 import './About.css';
 
 const About = () => {
@@ -13,16 +12,19 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-text glass-card animate-fade-in">
-            <h3>Frontend Developer focused on React.js &amp; JavaScript</h3>
+            <h3>Frontend Developer with practical full-stack experience</h3>
 
             <p>
-              I'm a frontend developer focused on building responsive and interactive
-              web applications using React.js and JavaScript. I enjoy turning ideas into
-              clean, functional interfaces and working with APIs to build real-world applications.
+              I'm a BCA graduate focused on frontend development with React.js
+              and JavaScript. I enjoy building clean interfaces and working with
+              APIs to create functional web applications.
             </p>
             <p>
-              I've built projects ranging from e-commerce and weather applications to a
-              YouTube-inspired video platform and a full-stack blogging application.
+              Beyond the frontend, I've built a full-stack blogging platform
+              (DevBlog) using Node.js, Express, and MongoDB — handling everything
+              from REST API design and JWT authentication to database modeling.
+              I'm interested in continuing to grow toward broader full-stack
+              development.
             </p>
 
             <div className="about-details">
@@ -59,17 +61,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="about-actions">
-              <a
-                href={resumePDF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-                aria-label="View Aryan Karmur's resume (opens in new tab)"
-              >
-                View Resume
-              </a>
-            </div>
+
           </div>
         </div>
       </div>

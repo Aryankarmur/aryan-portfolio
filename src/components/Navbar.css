@@ -110,6 +110,22 @@
   color: var(--accent-primary);
 }
 
+.nav-resume-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.375rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.nav-resume-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent-primary);
+}
+
 .mobile-menu-btn {
   display: none;
   background: transparent;
@@ -186,6 +202,10 @@
   }
 
   .nav-links {
+    display: none;
+  }
+
+  .nav-resume-btn {
     display: none;
   }
 
