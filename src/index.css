@@ -248,3 +248,19 @@ img {
     font-size: 1.875rem;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 3rem 0;
+  }
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}

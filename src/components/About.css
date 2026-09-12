@@ -89,3 +89,12 @@
     padding: 1.5rem;
   }
 }
+
+@media (max-width: 375px) {
+  .about-text {
+    padding: 1rem;
+  }
+  .about-details {
+    gap: 1rem;
+  }
+}

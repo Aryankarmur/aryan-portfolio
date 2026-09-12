@@ -129,6 +129,7 @@
 /* Links */
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--glass-border);
@@ -170,5 +171,14 @@
 @media (max-width: 480px) {
   .project-content {
     padding: 1.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .project-content {
+    padding: 1rem;
+  }
+  .project-links {
+    gap: 0.75rem;
   }
 }

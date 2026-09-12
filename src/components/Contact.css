@@ -70,6 +70,8 @@
   color: var(--text-secondary);
   font-size: 0.9375rem;
   transition: var(--transition);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .info-item a:hover {
@@ -79,5 +81,18 @@
 @media (max-width: 576px) {
   .contact-info {
     padding: 1.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-info {
+    padding: 1.25rem;
+  }
+  .info-item {
+    gap: 0.75rem;
+  }
+  .info-icon {
+    width: 40px;
+    height: 40px;
   }
 }
